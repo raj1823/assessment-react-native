@@ -1,0 +1,27 @@
+[
+    {
+      "cat_name":"Fruits",
+      
+      "Quantity":"5",
+      "Title":"Mango"
+    },
+    {
+      "cat_name":"Fruits",
+      
+      "Quantity":"20",
+      "Title":"Banana"
+    },
+    {
+      "cat_name":"Vegetables",
+     
+      "Quantity":"15",
+      "Title":"Brinjal"
+    },
+    {
+      "cat_name":"Vegetables",
+      
+      "Quantity":"08",
+      "Title":"Potato"
+    }
+    
+  ]

@@ -1,0 +1,32 @@
+
+var ftGUID_4214893="444781DF569A7A";
+var ftConfID_4214893="0";
+var ftParams_4214893="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Ftpc.googlesyndication.com%2Fsafeframe%2F1-0-37%2Fhtml%2Fcontainer.html&cachebuster=583088.5414598794";
+var ftKeyword_4214893="";
+var ftCustom_4214893="";
+var ftSection_4214893="";
+var ftSegment_4214893="";
+var ftSegmentList_4214893=[];
+var ftRuleMatch_4214893="0";
+var ftTimestamp_4214893="1583472649";
+var ftGeoC2_4214893="in";
+var ftGeoState_4214893="up";
+var ftGeoCity_4214893="noida";
+var ftISP_4214893="bharti airtel limited";
+var ftSpeed_4214893="broadband";
+var ftDMA_4214893="356001";
+var ftLong_4214893="77.3225";
+var ftLat_4214893="28.5658";
+var ftPostal_4214893="201301";
+var ftTimeZone_4214893="530";
+var ftMobileCarrier_4214893="";
+var ftImp4214893 = {};
+ftImp4214893.privacy = "x";
+ftImp4214893.guidAge = "1";
+ftImp4214893.impID = "9FF3A0CD-CF39-BB1F-0B82-809FB6AA6944";
+ftImp4214893.duid = "FT:444781DF569A7A";
+
+ftImp4214893.ft_tpplid = "";
+ftImp4214893.ft_c = {};
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/421/4214893/2600614/js/j-4214893-2600614.js" id="ftscript_m4214893" name="ftscript_m4214893"></scr'+'ipt>');
