@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {  ActivityIndicator, Text,StyleSheet, View ,SafeAreaView,SectionList } from 'react-native';
+import { FlatList } from 'react-native-gesture-handler';
 
 function Item({ title}) {
     return (
@@ -63,7 +64,7 @@ export default class ApiFetching extends React.Component {
   
     return (
       <SafeAreaView style={styles.container}>
-        <SectionList
+        {/* <SectionList
           sections={this.state.dataSource}
           keyExtractor={(item, index) => item + index}
   
@@ -77,7 +78,25 @@ export default class ApiFetching extends React.Component {
             
           )}
           
-        />
+        /> */}
+
+        <FlatList data={this.dataSource}
+                  renderItem={({item})=> {
+
+                    return(
+                          <View style={{height:50,backgroundColor:"blue"}}>
+                            <Text style={{fontSize:24}}>{item.title}</Text>
+                              <View style={{flexDirection:"row"}}>
+                           
+                                 <Text style={{fontSize:15}}>{item.data[0]}/></Text>  
+
+
+                               </View>
+                            </View>
+
+
+                    );
+                  }} />
       </SafeAreaView>
     );
           }
