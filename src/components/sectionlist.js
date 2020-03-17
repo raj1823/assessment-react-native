@@ -11,75 +11,92 @@ import {
 
 
 
-const DATA = 
-    [
-        {
-          "cat_name":"Fruits",
+// const DATA = 
+//     [
+//         {
+//           "cat_name":"Fruits",
           
-          "Quantity":"5",
-          "Title":"Mango"
-        },
-        {
-          "cat_name":"Fruits",
+//           "Quantity":"5",
+//           "Title":"Mango"
+//         },
+//         {
+//           "cat_name":"Fruits",
           
-          "Quantity":"20",
-          "Title":"Banana"
-        },
-        {
-          "cat_name":"Vegetables",
+//           "Quantity":"20",
+//           "Title":"Banana"
+//         },
+//         {
+//           "cat_name":"Vegetables",
          
-          "Quantity":"15",
-          "Title":"Brinjal"
-        },
-        {
-          "cat_name":"Vegetables",
+//           "Quantity":"15",
+//           "Title":"Brinjal"
+//         },
+//         {
+//           "cat_name":"Vegetables",
           
-          "Quantity":"08",
-          "Title":"Potato"
-        }
+//           "Quantity":"08",
+//           "Title":"Potato"
+//         }
         
-      ];
+//       ];
 
-      function groupBy(y, s) {
-        var i = 0, val, index,
-            values = [], result = [];
-        for (; i < y.length; i++) {
-            val = y[i][s];
-            index = values.indexOf(val);
-            if (index > -1)
-                result[index].push(y[i]);
-            else {
-                values.push(val);
-                result.push([y[i]]);
-            }
-        }
-        return result;
-    }
-    var category_wise_array = groupBy(DATA,'cat_name')    
+    //   function groupBy(y, s) {
+    //     var i = 0, val, index,
+    //         values = [], result = [];
+    //     for (; i < y.length; i++) {
+    //         val = y[i][s];
+    //         index = values.indexOf(val);
+    //         if (index > -1)
+    //             result[index].push(y[i]);
+    //         else {
+    //             values.push(val);
+    //             result.push([y[i]]);
+    //         }
+    //     }
+    //     return result;
+    // }
+    // var category_wise_array = groupBy(DATA,'cat_name')    
 
 
 
-    var output=category_wise_array.map(item=>{
+//     var output=category_wise_array.map(item=>{
                         
-        var obj= item.reduce((acc, item1)=>{  var n=item1.data
-                                                acc.data.push(n)
-                        return acc
-                            },{data:[]}) 
-                            return {...obj.Quantity,
-                                    ...obj.Title,
-                                    ...obj}}
-)
+//         var obj= item.reduce((acc, item1)=>{  var n=item1.data
+//                                                 acc.data.push(n)
+//                         return acc
+//                             },{data:[]}) 
+//                             return {...obj.Quantity,
+//                                     ...obj.Title,
+//                                     ...obj}}
+// )
 
 
+const DATA = [
+  {
+    title: 'Main dishes',
+    data: ['Pizza', 'Burger', 'Risotto'],
+  },
+  {
+    title: 'Sides',
+    data: ['French Fries', 'Onion Rings', 'Fried Shrimps'],
+  },
+  {
+    title: 'Drinks',
+    data: ['Water', 'Coke', 'Beer'],
+  },
+  {
+    title: 'Desserts',
+    data: ['Cheese Cake', 'Ice Cream'],
+  },
+];
 
-
-function Item({ title }) {
-  return (
-    <View style={styles.item}>
-      <Text style={styles.title}>{title}</Text>
-    </View>
-  );
-}
+// function Item({ title }) {
+//   return (
+//     <View style={styles.item}>
+//       <Text style={styles.title}>{title}</Text>
+//     </View>
+//   );
+// }
 
 export default function App() {
   return (
